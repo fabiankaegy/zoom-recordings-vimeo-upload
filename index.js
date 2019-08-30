@@ -46,8 +46,16 @@ const recordingsUrl = `https://api.zoom.us/v2/meetings/${meetingId}/recordings`;
 		}
 		const zoomData = await zoomResponse.json();
 
+		const video = zoomData.recording_files[0];
+
 		vimeoClient.upload(
-			zoomData.recording_files[0].download_url,
+			video.download_url,
+			{
+				name: `JavaScript for WordPress Bootcamp - ${video.recording_start}`,
+				privacy: {
+					view: "unlisted"
+				}
+			},
 			function(uri) {
 				console.log("File upload completed. Your Vimeo URI is:", uri);
 			},
