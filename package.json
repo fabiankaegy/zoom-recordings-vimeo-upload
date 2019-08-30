@@ -1,29 +1,31 @@
 {
-  "name": "zoom-recordings-vimeo-upload",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://fabiankaegy@github.com/fabiankaegy/zoom-recordings-vimeo-upload.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/fabiankaegy/zoom-recordings-vimeo-upload/issues"
-  },
-  "homepage": "https://github.com/fabiankaegy/zoom-recordings-vimeo-upload#readme",
-  "dependencies": {
-    "dotenv": "^8.1.0",
-    "jsonwebtoken": "^8.5.1",
-    "node-fetch": "^2.6.0",
-    "vimeo": "^2.1.1"
-  },
-  "devDependencies": {
-    "jest": "^24.9.0"
-  }
+	"name": "zoom-recordings-vimeo-upload",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "nodemon index.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://fabiankaegy@github.com/fabiankaegy/zoom-recordings-vimeo-upload.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/fabiankaegy/zoom-recordings-vimeo-upload/issues"
+	},
+	"homepage": "https://github.com/fabiankaegy/zoom-recordings-vimeo-upload#readme",
+	"dependencies": {
+		"dotenv": "^8.1.0",
+		"jsonwebtoken": "^8.5.1",
+		"node-fetch": "^2.6.0",
+		"vimeo": "^2.1.1"
+	},
+	"devDependencies": {
+		"jest": "^24.9.0",
+		"nodemon": "^1.19.1"
+	}
 }
