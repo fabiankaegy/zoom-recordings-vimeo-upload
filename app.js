@@ -26,7 +26,7 @@ const infoRouter = require("./routes/info");
 const uploadRecordingRouter = require("./routes/upload-recording");
 
 app.use("/info", infoRouter);
-app.use("/uploadRecording", uploadRecordingRouter);
+app.use("/upload-recording", uploadRecordingRouter);
 
 // error handler
 app.use(function(error, request, response, next) {
