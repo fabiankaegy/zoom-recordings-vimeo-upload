@@ -17,6 +17,9 @@ router.post("/", async (request, response, next) => {
 	const video = recording_files.filter(
 		recording => recording.recording_type === "shared_screen_with_speaker_view"
 	)[0];
+
+	response.send(video);
+
 	try {
 		const filePath = await downloadVideo(video.download_url);
 		const result = await uploadToVimeo(toTimeString(video.recording_start));
